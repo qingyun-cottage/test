@@ -1,5 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import { appTest } from './funs'
 
 const app = express()
 
@@ -18,4 +19,5 @@ app.all('*', (req, res, next) => {
 
 app.listen(8290, () => {
     console.log('server is running at http://localhost:8980')
+    appTest()
 })
